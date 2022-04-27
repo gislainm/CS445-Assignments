@@ -8,10 +8,10 @@ let print =function (text){
 console.log(text);
 }
 
- *first item
- *second item
- *third item
- *fourth item
+  *first item
+  *second item
+  *third item
+  *fourth item
 
 Here is a [link to my repository](https://github.com/gislainm/gislainm.github.io)
 
