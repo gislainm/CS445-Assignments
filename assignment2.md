@@ -1,4 +1,4 @@
-##Question 1
+## Question 1
 ```javascript
 class University {
     name: string;
@@ -16,7 +16,7 @@ let miu: University = new University("MIU", "MSD");
 miu.graduation(2021);
 ```
 
-##Question 2
+## Question 2
 ```javascript
 let bankAccount: {
     money: number,
@@ -42,7 +42,7 @@ myself.bankAccount.deposit(3000);
 console.log(myself);
 ```
 
-##Question 3
+## Question 3
 ```javascript
 class Car {
     name: string;
@@ -65,7 +65,7 @@ car.accelerate(60);
 console.log(car.acceleration);//60
 ```
 
-##Question 4
+## Question 4
 ```javascript
 let baseObject: {
     width: number,
