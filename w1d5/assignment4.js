@@ -117,7 +117,7 @@ const fibonacci = (function () {
             value = memo[n];
         } else {
             if (n === 0 || n === 1) {
-                value = n;
+                value = 1;
             } else {
                 value = fibo(n - 1) + fibo(n - 2);
             }
@@ -130,14 +130,14 @@ const fibonacci = (function () {
 
 // function fibonacci2(n) {
 //     if (n <= 1) {
-//         return n;
+//         return 1;
 //     }
 //     return fibonacci2(n - 1) + fibonacci2(n - 2);
 // }
 
-// console.time('Memoized Version');
-// console.log(fibonacci(50));
-// console.timeEnd('Memoized Version');
+console.time('Memoized Version');
+console.log(fibonacci(50));
+console.timeEnd('Memoized Version');
 
 // console.time('Not Memoized Version');
 // console.log(fibonacci2(50));
