@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        #myCalculator {
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            row-gap: 20px;
+            padding: 50px;
+        }
+
+        #calc {
+            text-align: center;
+        }
+
+        input {
+            padding: 5px
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            document.getElementById("submitbtn").onclick = validate;
+            let operator = document.getElementById("operator");
+            operator.onclick = function () {
+                operator.style.color = "";
+                operator.style.borderColor = "";
+            }
+        }
+        function validate() {
+            let operator = document.getElementById("operator");
+            if (operator.value == "+") {
+                add();
+            } else if (operator.value == "-") {
+                substract();
+            } else if (operator.value == "*") {
+                multiply();
+            } else if (operator.value == "/") {
+                divide();
+            } else {
+                operator.value = "valid operators (+ - * /)";
+                operator.style.color = "red";
+                operator.style.borderColor = "red";
+            }
+        }
+        function add() {
+            let num1 = document.getElementById("firstValue");
+            let num2 = document.getElementById("secondValue");
+            let result = document.getElementById("result");
+            result.value = Number(num1.value) + Number(num2.value);
+        }
+        function substract() {
+            let num1 = document.getElementById("firstValue");
+            let num2 = document.getElementById("secondValue");
+            let result = document.getElementById("result");
+            result.value = Number(num1.value) - Number(num2.value);
+        }
+        function multiply() {
+            let num1 = document.getElementById("firstValue");
+            let num2 = document.getElementById("secondValue");
+            let result = document.getElementById("result");
+            result.value = Number(num1.value) * Number(num2.value);
+        }
+        function divide() {
+            let num1 = document.getElementById("firstValue");
+            let num2 = document.getElementById("secondValue");
+            let result = document.getElementById("result");
+            result.value = Number(num1.value) / Number(num2.value);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myCalculator">
+        <div id="calc">
+            <h1>Calculator</h1>
+            Num 1: <input type="number" id="firstValue" value="" onfocus="this.value=''">
+            Operator:<input type="text" id="operator" value="" onfocus="this.value=''">
+            Num 2: <input type="number" id="secondValue" value="" onfocus="this.value=''">
+            <button id="submitbtn">Submit</button>
+        </div>
+        <div id="results">
+            Results: <input type="number" id="result" value="">
+        </div>
+    </div>
+</body>
+
+</html>

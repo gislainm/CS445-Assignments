@@ -1,0 +1,25 @@
+#myflex {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 20px;
+    padding: 50px;
+    padding-bottom: 15px;
+    justify-content: center;
+}
+
+div>img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    text-align: center;
+
+
+}
+
+#swapbtn {
+    padding: 5px;
+    font-size: 17px;
+    border-radius: 5px;
+}
