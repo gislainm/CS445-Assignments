@@ -1,14 +1,14 @@
 "use strict";
 /*eslint-disable */
 
-console.log("start")
+//console.log("start")
 async function foo() {
     console.log('foo.....')
     return 1;
 }
-console.log(foo());
-foo().then(console.log);
-console.log("end")
+// console.log(foo());
+// foo().then(console.log);
+// console.log("end")
 
 // async function bar() {
 //     let res = await foo();
@@ -26,3 +26,10 @@ console.log("end")
 // } finally {
 //     console.log('We do cleanup here');
 // }
+
+// String.prototype.reverse = function () {
+//     let newStr = this.split("").reverse().join("");
+//     console.log(newStr);
+// }
+// "hello".reverse();
+

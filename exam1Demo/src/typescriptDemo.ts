@@ -99,9 +99,9 @@ class Department {
     }
 }
 
-const arr:{
-    firstname:string;
-    middlename?:string;
-    lastname:string
-}[]=[{"firstname":"Gislain","lastname":"Muhikira",middlename:"Ntwali"},{firstname:"yurr",lastname:"yarrr"}]
- 
+const arr: {
+    firstname: string;
+    middlename?: string;
+    lastname: string
+}[] = [{ "firstname": "Gislain", "lastname": "Muhikira", middlename: "Ntwali" }, { firstname: "yurr", lastname: "yarrr" }]
+
