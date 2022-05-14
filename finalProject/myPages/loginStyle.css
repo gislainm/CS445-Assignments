@@ -1,0 +1,59 @@
+body {
+    background-color: #1f1f1f;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.88);
+    color: hsla(0, 0%, 100%, .95);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, "Apple Color Emoji", "SF Pro", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding-top: 7px;
+}
+
+.logo2 {
+    /* text-align: end; */
+
+}
+
+.loginBtn {
+    background-color: #d60017;
+    border-color: #d60017;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.loginBtn:hover {
+    background-color: #fa586a;
+    border-color: #fa586a;
+}
+
+#albumCovers {
+    width: 500px;
+    height: 500px;
+    border:solid 3px #d60017;
+   margin-left: 34%;
+}
+
+.carousel-item>img {
+    /* object-fit: contain; */
+    width: 100%;
+    height: auto
+}
+
+#marketing {
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#marketing>p {
+    margin: 0px;
+}
+#moto{
+    color:#d60017;
+   text-align: center;
+}
