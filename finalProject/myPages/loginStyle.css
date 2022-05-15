@@ -11,12 +11,14 @@ body {
     padding-top: 7px;
 }
 
-.logo2 {
-    /* text-align: end; */
+#invalidIpt {
+    color: #d60017;
+    font-size: 14px;
+    font-weight: 500;
 
 }
 
-.loginBtn {
+.btn {
     background-color: #d60017;
     border-color: #d60017;
     border-radius: 6px;
@@ -25,7 +27,7 @@ body {
     font-weight: 400;
 }
 
-.loginBtn:hover {
+.btn:hover {
     background-color: #fa586a;
     border-color: #fa586a;
 }
@@ -33,8 +35,8 @@ body {
 #albumCovers {
     width: 500px;
     height: 500px;
-    border:solid 3px #d60017;
-   margin-left: 34%;
+    border: solid 3px #d60017;
+    margin-left: 34%;
 }
 
 .carousel-item>img {
@@ -53,7 +55,52 @@ body {
 #marketing>p {
     margin: 0px;
 }
-#moto{
-    color:#d60017;
-   text-align: center;
+
+#moto {
+    color: #d60017;
+    text-align: center;
+}
+
+#logout {
+    display: none;
+}
+
+#search {
+    display: none;
+}
+
+#songs>h2 {
+    color: #da0f47;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#songs {
+    width: 80%;
+}
+
+#addBtn,
+#playBtn,
+#removeBtn {
+    color: #da0f47;
+    margin-right: 10px;
+}
+
+#noPlaylist {
+    color: #da0f47;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#playlist>h2 {
+    color: #da0f47;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+#playlist {
+    width: 80%;
 }
