@@ -18,34 +18,42 @@
                 alert('Body!');
             }); //bubbling phase 
         document.getElementById('container')
-            .addEventListener('click', function () {
+            .addEventListener('click', function (event) {
                 alert('Div!');
             }, true); //capture phase
         document.getElementById('btn')
             .addEventListener('click', function (event) {
-                alert('Text clicked2!');
+                alert('Text clicked1!');
                 event.stopImmediatePropagation();
             })
         document.getElementById('btn')
             .addEventListener('click', function (event) {
-                alert('Text clicked!');
+                alert('Text clicked2!');
             }); //bubbling phase
     </script>
-
-    <!-- <button id="myBtn">Try it</button>
+    <!-- <p>When you submit the form, a function is triggered which alerts some text.</p>
+    <form id="myform" action="#">
+        Enter name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </form>
     <script>
-        function myFunction(event) {
-            alert("Hello World!");
-            // Try to remove me below 
-            event.stopImmediatePropagation();
+        document.getElementById("myform").onsubmit = function () {
+            alert("The form was submitted");
         }
-        function someOtherFunction() {
-            alert("I will not get to say Hello World");
+        document.getElementById("myform").onreset = function () {
+            alert("the form was reset");
         }
-        const myBtn = document.getElementById("myBtn");
-        myBtn.addEventListener("click", myFunction);
-        myBtn.addEventListener("click", someOtherFunction);
-    </script> -->
+    </script>  -->
+    <!-- <a id="myAnchor" href="https://w3schools.com/">Go to W3
+        Schools.com</a>
+    <p>The preventDefault() method will prevent the link ab
+        ove from following the URL.</p>
+    <script>
+        document.getElementById("myAnchor").addEventListener("click", function (event) {
+            event.preventDefault();
+        });
+    </script>  -->
 </body>
 
 </html>
