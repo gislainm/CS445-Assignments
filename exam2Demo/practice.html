@@ -20,6 +20,7 @@
         document.getElementById('container')
             .addEventListener('click', function (event) {
                 alert('Div!');
+                event.stopPropagation();
             }, true); //capture phase
         document.getElementById('btn')
             .addEventListener('click', function (event) {
@@ -54,6 +55,23 @@
             event.preventDefault();
         });
     </script>  -->
+    <!-- <script>
+        async function fetchPostById(postid) {
+            let response = await fetch("https://jsonplaceholder.typicode.com/posts/" + postid);
+            if (response.ok) {
+                let json = await response.json();
+                console.log(json);
+            } else {
+                console.log("HTTP-Error: " + response.status);
+            }
+        }
+        try {
+            fetchPostById(1);
+        } catch (e) {
+            console.log(e);
+        }
+
+    </script> -->
 </body>
 
 </html>
